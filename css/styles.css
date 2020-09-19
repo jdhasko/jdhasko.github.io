@@ -219,21 +219,25 @@
 
 .contactContainer
 {
-display: flex;
-text-align: center;
+  margin-left: 23%;
+  margin-right: 20%;
+  display: flex;
+  text-align: center;
+
 
 }
 
 .contact
 {
+  width: 100%;
   text-align: center;
   color: white;
   font-size: 18px;
+  align-items: center;
 
 }
 .contact img
 {
-  position: relative;
 margin-right: 6%;
 }
 
@@ -257,7 +261,7 @@ h2
 {font-weight: normal;
   font-size: 22px}
 
-h3{font-weight: normal; 
+h3{font-weight: normal; margin: 0; 
 font-size: 19px;}
 
 .bg7
