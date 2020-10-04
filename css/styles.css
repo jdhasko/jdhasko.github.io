@@ -130,7 +130,7 @@
   margin-right: 23px;
 }
 
-.topnav a:hover {
+header a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -168,7 +168,7 @@
     filter: grayscale(0%); /* FF 35+ */
   }
 
-  
+
 
 .MainText
 {
@@ -300,8 +300,13 @@ font-size: 19px;}
   transition: filter .2s ease-in-out;
   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%); /* FF 35+ */
-  
 }
+
+
+
+
+
+
 .middle
 {
   position: absolute;
@@ -333,5 +338,4 @@ font-size: 19px;}
         height: 100%;
         }
     }
-    
     
