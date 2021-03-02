@@ -1,5 +1,5 @@
 <template>
-  <Section> 
+    <div>
       <div id="Home"> 
                 <div class="caption">
                 <span class="border">&lt;Welcome to the future./&gt;</span>
@@ -7,19 +7,22 @@
       </div>
 
       <div id="button-container">     
-           <button v-on:click="menuChange('Profile')" >&lt;about_me/&gt;</button>
-           <button v-on:click="menuChange('Principles')" >&lt;my_principles/&gt;</button>
+           <button class="selector-button" v-on:click="menuChange('Profile')" v-bind:class="{purple : ( menu == 'Profile') }">&lt;about_me/&gt;  </button>
+           <button class="selector-button" v-on:click="menuChange('Principles')" v-bind:class="{purple : ( menu=='Principles')}">&lt;my_principles/&gt;</button>
       </div>
 
       <template v-if="menu=='Profile'">
-          <p>asdasdasd</p>
+          <ProfileComponent/>
       </template>
     
-  </Section>
+  </div>
 </template>
 
 
 <script>
+import ProfileComponent from './ProfileComponent'
+
+
 export default {
   name: 'HomeComponent',
   data() {
@@ -34,6 +37,10 @@ export default {
           this.menu = menuOption;
           console.log("The menu has been changed to: " + this.menu);
       }
+  },
+  components:
+  {
+      ProfileComponent
   }
 }
 </script>
@@ -42,7 +49,7 @@ export default {
     #Home
     {
         background-image: url("../assets/main-background.gif");
-        height: 85vh;
+        height: 95vh;
     }
     .caption 
     {
@@ -70,7 +77,7 @@ export default {
         height: auto;
     }
 
-    #button-container button 
+    .selector-button 
     {
         font-family: 'Courier New', Courier, monospace;
         width: 50%;
@@ -80,15 +87,22 @@ export default {
         border: none;
     }
 
-    #button-container button:hover
+    .selector-button:hover
     {
-        background:rgb(165, 165, 165);
+        background:rgb(41, 41, 41);
     }
 
-    #button-container button:focus
+    .selector-button:focus
     {
-        background: #5c19da;
         outline: none;
     }
-    
+
+    .purple 
+    {
+        background: #5c19da;
+    }
+    .purple:hover 
+    {
+        background: #5c19da;
+    }
 </style>
