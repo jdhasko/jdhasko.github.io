@@ -8,9 +8,10 @@
             <h2>Hey there,</h2>
             <h3>My name is Dominik</h3>
             <h4>and I am a front-end developer and a student in Computer Science.</h4>
-            <div id="button-container">
-            <button> <div id="logo">&#xE72D;</div> view projects</button>
-            </div>
+        
+            <MyButton text="view projects" icon="&#xE72D;"/>
+
+        
         </div>
         </div>
         <div id="about_me" class="profile-item">
@@ -18,7 +19,6 @@
             <p>
                 I am a 20 years old student at Zealand Academy in Computer Science with a great desire for programming. I am a talkative, creative and open-minded person. I was born and raised in Hungary, but when I turned 18, I moved to Denmark to take my education in Denmark. Besides my studies I also learn Danish, as I find it interesting just like the Danish way of living and culture. In my free time I love cooking, playing the piano and I am always open for a coffee and a great conversation.
                 If you would like to know more about my way of thinking click here.
-
             </p>
         </div>
 
@@ -26,7 +26,10 @@
 </template>
 
 <script>
+import MyButton from "./MyButton"
 export default {
+    name:'ProfileComponent',
+    components:{MyButton}
     
 }
 </script>
@@ -86,16 +89,7 @@ export default {
         font-weight: 300;
     }
 
-    #button-container > button
-    {
-        margin: auto;
-        text-align: center;
-        font-size: 15px;
-        padding: 10px 25px;
-        color: white;
-        background: #5c19da;
-        border: none;
-    }
+ 
 
     #about_me >h3
     {
@@ -107,19 +101,9 @@ export default {
     }
     #about_me > p
     {
-        padding: 0 13%;
+        padding: 0 13% 4%  ;
         text-align: justify ;
     }
-    #logo{
-        font-family: "Segoe MDL2 Assets";
-        display: inline;
-        padding: 5px;
-    }
 
-    #button-container
-    {
-        padding-top: 25px;
-        width: 100%;
-    }
 
 </style>
