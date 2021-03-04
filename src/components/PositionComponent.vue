@@ -1,22 +1,38 @@
 <template>
     <div class="main-container">
-       <div class="flex-header"> <img src="../assets/netto-logo.png"   alt="netto-icon">
+       <div class="flex-header"> <img :src="require(`@/assets/${logo}`)"   alt="netto-icon">
        <div class="block-display">
-           <h4>Csöcsök és segg a kurva élet</h4>
-           <h5>2015-0214</h5>
+           <h4>{{title}}</h4>
+           <h5>{{subTitle}}</h5>
        </div>
        </div>
        <div class="bottom-container">
-        <p>After a few months in Netto, I got promoted to a First Assistant.
-I've been working at multiple stores around Zealand and I felt like,
-despite the fact that I'm not a Dane, my work was more than appreciated all the time. Danish people are very supportive and encouraging. Since this period started, I became responsible for a store and for a team, therefore I gained experience in team-leading, and my time-management skill significantly improved.</p>
+        <p>{{description}}</p>
        </div>
+       <template v-if="buttonData.hasButton===true">
+       <MyButton :text='buttonData.text' :icon="buttonData.icon" :link="buttonData.link"/>
+       </template>
     </div>
 </template>
 
 <script>
+    import MyButton from './MyButton'
+
+
 export default {
-    name:'PositionComponent'
+    name:'PositionComponent',
+    components:
+    {
+        MyButton
+    },
+    props:
+    {
+        logo:String,
+        title:String,
+        subTitle:String,
+        description:String,
+        buttonData:Object
+    }
 }
 </script>
 
@@ -26,6 +42,7 @@ export default {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: black;
         padding-bottom: 3%;
+        margin-bottom: 5%;
 
     }
     .flex-header

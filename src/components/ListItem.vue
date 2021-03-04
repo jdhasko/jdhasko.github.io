@@ -44,7 +44,7 @@ export default {
 {
         display: flex;
         justify-content: space-between;
-        width: 78%;
+        width: 80%;
         margin: auto;
 
 }
