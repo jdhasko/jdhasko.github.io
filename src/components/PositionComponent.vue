@@ -1,6 +1,9 @@
 <template>
     <div class="main-container">
-       <div class="flex-header"> <img :src="require(`@/assets/${logo}`)"   alt="netto-icon">
+       <div class="flex-header">
+           <template v-if="logo != '' ">
+            <img :src="require(`@/assets/${logo}`)"   alt="netto-icon">
+           </template>
        <div class="block-display">
            <h4>{{title}}</h4>
            <h5>{{subTitle}}</h5>
@@ -43,8 +46,8 @@ export default {
         background-color: black;
         padding-bottom: 3%;
         margin-bottom: 5%;
-
     }
+
     .flex-header
     {
         display: flex;
@@ -54,13 +57,14 @@ export default {
     }
     .flex-header > img
     {
+        padding-right:2.5%;
         width: 70px;
         height: 70px;
     }
 
     .block-display
     {
-        padding-left: 3%;
+        
         display: block;
     }
     h4,h5

@@ -85,13 +85,34 @@ During my work in Netto as a Sales Assistant I gained really important practical
     </div>
     </div>
 
-             <div id="extra-container">
+             <div id="extra-background" class="extra-container">
                 <div class="flex-container">
                     <div class ="flex-vertical">
                                 <TitleComponent title='AWARDS'/>
+                                <SmallBlockComponent
+                                 title="STUDENT OF THE YEAR 2019"
+                                 subTitle="II. Rákóczi Ferenc Catholic Gymnasium" 
+                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
 
+                                <SmallBlockComponent
+                                 title="GRADUATIO CERTIFICATE"
+                                 subTitle="Praise for outstanding performance" 
+                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
+
+                                 <SmallBlockComponent
+                                 title="STUDENT OF THE YEAR 2019"
+                                 subTitle="II. Rákóczi Ferenc Catholic Gymnasium" 
+                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
                     </div >
                 <div class ="flex-vertical">
+                      <TitleComponent title='VOLUNTARY WORKS'/>
+                      <PositionComponent
+                        logo=""
+                        title="VOLUNTARY TUTOR IN MATHS AND PHYSICS"
+                        subTitle="2017 - 2019"
+                        description = "I attended to the IT class of the school, where we got a basic understanding on how the computer is built. We learned about databases, used Microsoft Access and also mySQL. We have been tought networking, we got practical experience with CISCO devices (switches, routers etc..) During my secondary education I participated numerous competitions in programming, maths and physics. In my freetime I have been tutoring Maths and Physics."
+                        :buttonData="{ihasButton:false}"
+                        />
                 </div >
                 </div>
              </div>
@@ -106,6 +127,7 @@ import ProfileComponent from './ProfileComponent'
 import BlockInfoComponent from './BlockInfoComponent'
 import TitleComponent from './TitleComponent'
 import PositionComponent from './PositionComponent'
+import SmallBlockComponent from './SmallBlockComponent'
 
 export default {
   name: 'HomeComponent',
@@ -127,7 +149,8 @@ export default {
       BlockInfoComponent,
       ProfileComponent,
       TitleComponent,
-      PositionComponent
+      PositionComponent,
+      SmallBlockComponent
   }
 }
 </script>
@@ -206,7 +229,6 @@ export default {
         flex-direction: column;
         width: 48%;
         margin: 0px auto;
-        padding-bottom: 5%;
    }
    .background-container{
        background-image: url("../assets/bg-small7.gif"); 
@@ -218,6 +240,13 @@ export default {
    .extra-container
    {
        margin-top:4%;
+   }
+   #extra-background
+   {
+       background-image: url("../assets/bg6.gif");
+       background-repeat: no-repeat;
+       background-size: cover;
+       padding: 4% 0px;
    }
    
 

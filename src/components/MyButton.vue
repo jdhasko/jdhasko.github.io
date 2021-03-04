@@ -54,7 +54,6 @@ export default {
 
     #button-container
     {
-        padding-top: 25px;
         width: 100%;
     }
     a:link,a:visited,a

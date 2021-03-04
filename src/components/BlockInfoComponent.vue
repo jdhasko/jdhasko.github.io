@@ -40,7 +40,8 @@ export default {
     text-align: left;
     background-color:black;
     width: 49%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
+    padding-top:3%;
 }
 h3
 {

@@ -8,9 +8,10 @@
             <h2>Hey there,</h2>
             <h3>My name is Dominik</h3>
             <h4>and I am a front-end developer and a student in Computer Science.</h4>
-        
-            <MyButton text="view projects" icon="&#xE72D;"/>
 
+            <div class="button-box">
+            <MyButton text="view projects" icon="&#xE72D;"/>
+            </div>
         
         </div>
         </div>
@@ -104,6 +105,10 @@ export default {
     {
         padding: 0 13% 4%  ;
         text-align: justify ;
+    }
+    .button-box
+    {
+        margin-top: 3%;
     }
 
 
