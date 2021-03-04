@@ -24,7 +24,7 @@ export default {
   text-align: center;
   color:white;
   background-color:  #5c19da;
-    height: auto;
+  height: auto;
 
 }
 body

@@ -43,6 +43,7 @@ export default {
         width: 78%;
         margin:auto;
         margin-top: 80px;
+        margin-bottom:5% ;
     }
     #profile-flex
     {
