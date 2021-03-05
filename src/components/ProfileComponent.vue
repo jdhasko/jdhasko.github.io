@@ -10,7 +10,7 @@
             <h4>and I am a front-end developer and a student in Computer Science.</h4>
 
             <div class="button-box">
-            <MyButton text="view projects" icon="&#xE72D;"/>
+            <MyButton text="view projects" icon="fab fa-github fa-lg" link="https://github.com/jdhasko"/>
             </div>
         
         </div>
@@ -110,6 +110,35 @@ export default {
     {
         margin-top: 3%;
     }
+
+       
+   @media only screen and (max-width:820px)
+   {
+       #welcome-container
+       {
+           padding: 2% 3%;
+       }
+        #welcome-container > h2
+       {
+        font-size: 40px;
+        letter-spacing: 3px;
+       }
+
+       #welcome-container >h3
+        {
+            margin-top:0px;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        #profile-container{
+          width: 90%;
+        }
+        #profile-flex
+       {
+       }
+
+   }
 
 
 </style>

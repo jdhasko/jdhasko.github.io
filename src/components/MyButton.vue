@@ -1,7 +1,7 @@
 <template>
     <div id="button-container"  @click="onClick">
             <button>
-                <div id="logo"> {{icon}} </div> {{text}}
+                <i :class="icon"></i> {{text}}
             </button>
     </div>
 </template>
@@ -59,6 +59,10 @@ export default {
     a:link,a:visited,a
     {
     text-decoration: none;
+    }
+    button > i
+    {
+        margin-right: 3px;
     }
 
 </style>

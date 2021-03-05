@@ -7,7 +7,9 @@
             </div>
         </div>
         <template v-if="buttonData.hasButton===true">
+        <div class="button-box">
         <MyButton :text="buttonData.text" :icon="buttonData.icon" :link="buttonData.link"/>
+        </div>
         </template>
     </div>
 </template>
@@ -42,6 +44,7 @@ export default {
     width: 49%;
     padding-bottom: 3%;
     padding-top:3%;
+    margin-bottom: 4%;
 }
 h3
 {
@@ -50,5 +53,18 @@ h3
     padding-left: 8%;
     margin: 2% 0%;
 }
+    .button-box
+    {
+        margin-top: 3%;
+    }
 
+       /**   MOBILE VIEW */
+   
+   @media only screen and (max-width:820px)
+   {
+    #block-container
+    {
+        width: 100%;
+    }
+   }
 </style>

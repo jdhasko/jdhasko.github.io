@@ -2,10 +2,8 @@
   <header>
     <a href="#Home"><img class="logo" width="55px" height="55px" src="../assets/logo.png"></a>
     <ul>
-    <li><a href="#Home">&lt;home/&gt;</a></li>
     <li><a target="_blankS" href="https://github.com/jdhasko?tab=repositories">&lt;my_Projects/&gt;</a></li>
-    <li><a target="_blanks" href="cv.pdf">&lt;resume_CV/&gt;</a></li>
-    <li><a href="#contact">&lt;contact/&gt;</a></li>
+    <li><a target="_blankS" href="https://github.com/jdhasko?tab=repositories">&lt;UI_designs/&gt;</a></li>
   </ul>
   </header>
 </template>
@@ -66,6 +64,18 @@ header{
     position: relative;
     transition: 0.6ms;
     margin-left: 0,15% ;
+  }
+
+  header .logo:focus
+  {
+    outline: none;
+  }
+  @media only screen and (max-width:820px)
+  {
+    header
+    {
+      visibility: hidden;
+    }
   }
 
 </style>

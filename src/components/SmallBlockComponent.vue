@@ -57,11 +57,22 @@ export default {
         justify-content: space-between; 
     }
     
-    .text-container
-    {
-    }
     .button-box{
-      
     min-width: 165px;
     }
+
+
+   /**   MOBILE VIEW */
+   
+   @media only screen and (max-width:820px)
+   {
+
+       .flex-container
+       {
+           display: flex;
+           justify-content: space-between;
+           flex-direction: row;
+       }
+   }
+
 </style>

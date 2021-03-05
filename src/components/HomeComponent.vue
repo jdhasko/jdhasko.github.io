@@ -16,6 +16,7 @@
 
                 <div class="background-container">
                     <div class="flex-container">
+
                         <BlockInfoComponent 
                         Title="PERSONAL INFORMATION" 
                         MarginSize='16'
@@ -25,7 +26,7 @@
                         {topic: 'ADDRESS', data:'Roskilde - Denmark', oneline:1},
                         {topic: 'EMAIL', data:'dominikjanoshasko@gmail.com', oneline:1},
                         {topic: 'LANGUAGES', data:['English - Professional','Hungarian   - Native', 'Danish - Beginner'], oneline:0}]"
-                        :buttonData="{icon: '&#xE896;', text: 'download resume   ', link: 'https://github.com/jdhasko', hasButton:true}" />
+                        :buttonData="{icon: 'fas fa-cloud-download-alt fa-lg', text: 'download resume   ', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/cv.pdf', hasButton:true}" />
 
                         <BlockInfoComponent 
                         Title="EXPERIENCE" 
@@ -34,7 +35,7 @@
                         {topic: 'PROGRAMMING LANGUAGES', data:['Javascript, Typescript','HTML, CSS','C#','SQL', 'React', 'Vue'], oneline:0},
                         {topic: 'METHODOLOGIES', data:['Agile Developent', 'XP and SCRUM'], oneline:0},
                         {topic: 'OTHER', data:['UI Design - Prototyping','Adobe Ps, Pr, Xd etc.', 'Computer Networks'], oneline:0}]"
-                        :buttonData="{icon: '&#xE890;', text: 'view grades ', link: '', hasButton:true}" />
+                        :buttonData="{icon: 'far fa-eye fa-lg', text: 'view grades ', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/grades.pdf', hasButton:true}" />
                     </div>
                 </div>
 
@@ -70,8 +71,8 @@ During my work in Netto as a Sales Assistant I gained really important practical
                 logo="zealand.png"
                 title="Zealand Academy - Computer Sciecne"
                 subTitle="2019 - Present"
-                description = "I am taking my current education in Denmark at Zealand Academy. I got hands on experience in programming and learned how project work really is. We have been tasked to deliver a solutions for real problems of a real companies. During my studies learned XAML, HTML, CSS, C#, SQL and Javascript as well. I got an overall understanding on the Agile software development process. During the project works we've been using XP and SCRUM."
-                :buttonData="{icon: '&#xE890;', text: 'See grades', link: '', hasButton:true}"
+                description = "I am taking my current education in Denmark at Zealand Academy. I got hands-on experience in programming and learned how project work really is. We have been tasked to deliver solutions for real problems of real companies. I specialised in IT-Security, Mobile App Development (Android studio/Java/Kotling/Xamarin) and Unity Game Development. I also got a great understanding on how APIs structured and work.  "
+                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: '', hasButton:true}"
                 />
 
                 <PositionComponent
@@ -79,7 +80,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
                 title="II. Rákóczi Ferenc Catholic Gymnasium - Kiskunhalas"
                 subTitle="2015 - 2019"
                 description = "I attended to the IT class of the school, where we got a basic understanding on how the computer is built. We learned about databases, used Microsoft Access and also mySQL. We have been tought networking, we got practical experience with CISCO devices (switches, routers etc..) During my secondary education I participated numerous competitions in programming, maths and physics. In my freetime I have been tutoring Maths and Physics."
-                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"
+                :buttonData="{ hasButton:false}"
                 />
             </div >
     </div>
@@ -92,17 +93,17 @@ During my work in Netto as a Sales Assistant I gained really important practical
                                 <SmallBlockComponent
                                  title="STUDENT OF THE YEAR 2019"
                                  subTitle="II. Rákóczi Ferenc Catholic Gymnasium" 
-                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
+                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See award', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/Student-of-the-year-award.pdf', hasButton:true}"/>
 
                                 <SmallBlockComponent
-                                 title="GRADUATIO CERTIFICATE"
+                                 title="GRADUATION CERTIFICATE"
                                  subTitle="Praise for outstanding performance" 
-                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
+                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:false}"/>
 
                                  <SmallBlockComponent
-                                 title="STUDENT OF THE YEAR 2019"
-                                 subTitle="II. Rákóczi Ferenc Catholic Gymnasium" 
-                                :buttonData="{icon: '&#xE890;', text: 'See diploma', link: '', hasButton:true}"/>
+                                 title="RECOMMENDATION"
+                                 subTitle="from Csaba Péli Computer Engineer" 
+                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'Read document', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/Letter-of-Recommendation.pdf', hasButton:true}"/>
                     </div >
                 <div class ="flex-vertical">
                       <TitleComponent title='VOLUNTARY WORKS'/>
@@ -110,12 +111,21 @@ During my work in Netto as a Sales Assistant I gained really important practical
                         logo=""
                         title="VOLUNTARY TUTOR IN MATHS AND PHYSICS"
                         subTitle="2017 - 2019"
-                        description = "I attended to the IT class of the school, where we got a basic understanding on how the computer is built. We learned about databases, used Microsoft Access and also mySQL. We have been tought networking, we got practical experience with CISCO devices (switches, routers etc..) During my secondary education I participated numerous competitions in programming, maths and physics. In my freetime I have been tutoring Maths and Physics."
+                        description = "During my secondary education I have been taking Maths and Physics on the highest possible level. In my free time I have been tutoring a small group of students in both subjects. I was trying to prepare my fellow students to their exams with a different approach than what is usual in Hungary. I tried to bring the subject close to them with real life examples."
+                        :buttonData="{ihasButton:false}"
+                        />
+
+                        <PositionComponent
+                        logo=""
+                        title="SERVICE AT THE LUTHERAN CHURCH"
+                        subTitle="2014 - 2019"
+                        description = "As a scout I have been actively supporting the local Lutheran Church and their nursing home. I participated in the organisation of many charity events during this time."
                         :buttonData="{ihasButton:false}"
                         />
                 </div >
                 </div>
              </div>
+             <FooterComponent/>
       </template>
     
   </div>
@@ -128,6 +138,7 @@ import BlockInfoComponent from './BlockInfoComponent'
 import TitleComponent from './TitleComponent'
 import PositionComponent from './PositionComponent'
 import SmallBlockComponent from './SmallBlockComponent'
+import FooterComponent from './FooterComponent'
 
 export default {
   name: 'HomeComponent',
@@ -150,7 +161,8 @@ export default {
       ProfileComponent,
       TitleComponent,
       PositionComponent,
-      SmallBlockComponent
+      SmallBlockComponent,
+      FooterComponent
   }
 }
 </script>
@@ -248,6 +260,33 @@ export default {
        background-size: cover;
        padding: 4% 0px;
    }
+
+   /**   MOBILE VIEW */
    
+   @media only screen and (max-width:820px)
+   {
+    .flex-container
+    {
+        flex-direction: column;
+        width: 90%;
+    }
+    .flex-vertical
+    {
+        width: 90%;
+    }
+    .caption 
+    {
+        top: 35%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        line-break: strict;
+        letter-spacing: 5px;
+        white-space: nowrap;
+
+    }
+
+   }
 
 </style>
