@@ -71,8 +71,26 @@ export default {
        {
            display: flex;
            justify-content: space-between;
-           flex-direction: row;
-       }
+           flex-direction: column;
+       }    
+        .button-box{
+            margin-top: 5%;
+        }   
    }
 
+    @media only screen and (max-width:1200px)
+   {
+              .flex-container
+       {
+           display: flex;
+           justify-content: space-between;
+           flex-direction: column;
+       }    
+        .button-box{
+            margin-top: 5%;
+        } 
+        h4,h5{
+        text-align: center;
+        }
+   }
 </style>

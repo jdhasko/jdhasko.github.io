@@ -66,5 +66,9 @@ h3
     {
         width: 100%;
     }
+    h3
+    {
+        font-size: 25px;
+    }
    }
 </style>

@@ -281,10 +281,8 @@ export default {
         text-align: center;
         color: white;
         font-size: 17px;
-        line-break: strict;
-        letter-spacing: 5px;
-        white-space: nowrap;
-
+        letter-spacing: 1px;
+        line-height: 40px;
     }
 
    }

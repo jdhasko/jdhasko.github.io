@@ -83,4 +83,14 @@ export default {
         text-align: justify;
         padding:0px 5%;
     }
+
+           /**   MOBILE VIEW */
+   
+   @media only screen and (max-width:820px)
+   {
+       p
+       {
+           font-size: 13px;
+       }
+   }
 </style>

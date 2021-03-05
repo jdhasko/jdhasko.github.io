@@ -58,4 +58,14 @@ export default {
     font-size: 16px;
     font-weight: bolder;
 }
+
+       /**   MOBILE VIEW */
+   
+   @media only screen and (max-width:820px)
+   {
+     #topic,#data
+     {
+       font-size: 13px;
+     }
+   }
 </style>
