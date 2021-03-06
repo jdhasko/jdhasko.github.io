@@ -154,6 +154,7 @@ q
     }
     h3{
     font-size: 18px;
+    text-align: justify;
     }
     q
     {
@@ -162,6 +163,7 @@ q
     .padding
     {
         padding-top:15%;
+        padding-bottom: 3%;
     }
     .content-box
     {
@@ -178,6 +180,7 @@ q
     .principle-container
    {
        margin-bottom:1.5%;
+       width: 75%;
    }
 }
 
