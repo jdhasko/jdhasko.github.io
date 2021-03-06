@@ -26,7 +26,7 @@
                         {topic: 'ADDRESS', data:'Roskilde - Denmark', oneline:1},
                         {topic: 'EMAIL', data:'dominikjanoshasko@gmail.com', oneline:1},
                         {topic: 'LANGUAGES', data:['English - Professional','Hungarian   - Native', 'Danish - Beginner'], oneline:0}]"
-                        :buttonData="{icon: 'fas fa-cloud-download-alt fa-lg', text: 'download resume   ', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/cv.pdf', hasButton:true}" />
+                        :buttonData="{icon: 'fas fa-cloud-download-alt fa-lg', text: 'download resume   ', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/cv.pdf', hasButton:true}" />
 
                         <BlockInfoComponent 
                         Title="EXPERIENCE" 
@@ -58,7 +58,7 @@ despite the fact that I'm not a Dane, my work was more than appreciated all the 
                 logo="netto-logo.png"
                 title="NETTO - Sales Assistant"
                 subTitle="2020 March - 2020 July"
-                description = "In the beginning of the COVID-19 outbreak and quarantine-period I really wanted to try to find a way to help people, who are risked or affected by the virus-situation. As a student I didn't have too much possibilities, but I decided to apply to Netto, so I can help people day by day. At Netto, I met a wonderful team, and I got a taste from the Danish culture.
+                description = "In the beginning of the COVID-19 outbreak and quarantine-period I really wanted to find a way to help people, who are risked or affected by the virus-situation. As a student I didn't have too much possibilities, but I decided to apply to Netto, so I can help people day by day. At Netto, I met a wonderful team, and I got a taste from the Danish culture.
 During my work in Netto as a Sales Assistant I gained really important practical skills regarding my future."
                 :buttonData="{hasButton:false}"
                 />
@@ -71,8 +71,8 @@ During my work in Netto as a Sales Assistant I gained really important practical
                 logo="zealand.png"
                 title="Zealand Academy - Computer Sciecne"
                 subTitle="2019 - Present"
-                description = "I am taking my current education in Denmark at Zealand Academy. I got hands-on experience in programming and learned how project work really is. We have been tasked to deliver solutions for real problems of real companies. I specialised in IT-Security, Mobile App Development (Android studio/Java/Kotling/Xamarin) and Unity Game Development. I also got a great understanding on how APIs structured and work.  "
-                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/grades.pdf', hasButton:true}"
+                description = "I am taking my current education in Denmark at Zealand Academy. I got hands-on experience in programming and learned how project work really is. We have been tasked to deliver solutions for real problems of real companies. I specialised in IT-Security, Mobile App Development (Android studio/Java/Kotling/Xamarin) and Unity Game Development. I got a great understanding on working with APIs and creating them. We also learnt about git and verion control."
+                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/grades.pdf', hasButton:false}"
                 />
 
                 <PositionComponent
@@ -173,7 +173,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
 
           <PrincipleComponent img="me_1.jpg" 
            title="A MISSION "
-           content="These values are essentail for me, but alone the goals are unreachable. But together we can make a difference. I would love to join a working environment where we share the same values and work for the same purposes."
+           content="These values are essentail for me, but alone the goals are unreachable. I would love to join a working environment where we share the same values and work for the same purposes. To make a difference. Together."
            :quote='false'
            :isReversed="false"/>
 
