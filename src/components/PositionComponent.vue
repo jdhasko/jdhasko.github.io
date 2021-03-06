@@ -2,7 +2,7 @@
     <div class="main-container">
        <div class="flex-header">
            <template v-if="logo != '' ">
-            <img :src="require(`@/assets/${logo}`)"   alt="netto-icon">
+            <img :src="require(`@/assets/${logo}`)"   alt="icon">
            </template>
        <div class="block-display">
            <h4>{{title}}</h4>

@@ -80,7 +80,7 @@ export default {
 
     @media only screen and (max-width:1200px)
    {
-              .flex-container
+        .flex-container
        {
            display: flex;
            justify-content: space-between;

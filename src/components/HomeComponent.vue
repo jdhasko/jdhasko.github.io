@@ -72,7 +72,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
                 title="Zealand Academy - Computer Sciecne"
                 subTitle="2019 - Present"
                 description = "I am taking my current education in Denmark at Zealand Academy. I got hands-on experience in programming and learned how project work really is. We have been tasked to deliver solutions for real problems of real companies. I specialised in IT-Security, Mobile App Development (Android studio/Java/Kotling/Xamarin) and Unity Game Development. I also got a great understanding on how APIs structured and work.  "
-                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: '', hasButton:true}"
+                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/grades.pdf', hasButton:true}"
                 />
 
                 <PositionComponent
@@ -93,7 +93,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
                                 <SmallBlockComponent
                                  title="STUDENT OF THE YEAR 2019"
                                  subTitle="II. Rákóczi Ferenc Catholic Gymnasium" 
-                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See award', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/Student-of-the-year-award.pdf', hasButton:true}"/>
+                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See award', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/Student-of-the-year-award.pdf', hasButton:true}"/>
 
                                 <SmallBlockComponent
                                  title="GRADUATION CERTIFICATE"
@@ -103,7 +103,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
                                  <SmallBlockComponent
                                  title="RECOMMENDATION"
                                  subTitle="from Csaba Péli Computer Engineer" 
-                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'Read document', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/Letter-of-Recommendation.pdf', hasButton:true}"/>
+                                :buttonData="{icon: 'far fa-eye fa-lg', text: 'Read document', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/Letter-of-Recommendation.pdf', hasButton:true}"/>
                     </div >
                 <div class ="flex-vertical">
                       <TitleComponent title='VOLUNTARY WORKS'/>
@@ -127,6 +127,59 @@ During my work in Netto as a Sales Assistant I gained really important practical
              </div>
              <FooterComponent/>
       </template>
+
+      <template v-if="menu=='Principles'">
+          <div  class="principles-box">
+
+
+          <PrincipleComponent img="me_2.jpeg" 
+           title="As a programmer, there is no bigger desire than working for a meaningful purpose: helping people and making their everyday life better. "
+           content="- János Dominik Haskó"
+           :quote='true' 
+           :isReversed="false"/>
+
+        
+          <PrincipleComponent img="equality.jpg" 
+           title="EQUALITY"
+           content="I have a vision of a place where no one has to suffer from discrimination because of their nationality, mother-tongue, disabilities, religion, skin-color, gender or sexual-orientation.
+            During my everyday life and work lif I will fight for this vision and do everything to create a safe and positive environment."
+           :quote='false'
+           :isReversed="true"/>
+
+          <PrincipleComponent img="sustainability.jpg" 
+           title="SUSTAINABILITY"
+           content="I want to do all I can to make the world a better place for the upcoming generations. A place where they do not need to be afraid of breathing the air or drinking the water because of the high-level of pollution. As a programmer, I would like to work on solutions that are helping us to protect our Earth."
+           :quote='false'
+           :isReversed="false"/>
+
+          <PrincipleComponent img="me_44.png" 
+           title="I truly believe that there's always space for improvement and that we can make the world a better place together. "
+           content="- János Dominik Haskó"
+           :quote='true' 
+           :isReversed="true"/>
+
+          <PrincipleComponent img="innovation.jpg" 
+           title="INNOVATION"
+           content="I believe that it is our duty to be pioneer and think outside of the box. Programmers have to be brave enoguh to do something different, to come up with something new that we've never seen before."
+           :quote='false'
+           :isReversed="false"/>
+
+          <PrincipleComponent img="collaboration.jpg" 
+           title="COLLABORATION"
+           content="Everyone has good ideas.  As a programmer it is essential to be open for discussion and feedbacks. Many project of mine proved that good ideas even come from people that are not in the field of IT.
+            I believe knowledge must be free and accessible for everyone, so we can grow stronger and smarter together."
+           :quote='false' 
+           :isReversed="true"/>
+
+          <PrincipleComponent img="me_1.jpg" 
+           title="A MISSION "
+           content="These values are essentail for me, but alone the goals are unreachable. But together we can make a difference. I would love to join a working environment where we share the same values and work for the same purposes."
+           :quote='false'
+           :isReversed="false"/>
+
+          </div>
+        <FooterComponent/>
+      </template>
     
   </div>
 </template>
@@ -139,6 +192,7 @@ import TitleComponent from './TitleComponent'
 import PositionComponent from './PositionComponent'
 import SmallBlockComponent from './SmallBlockComponent'
 import FooterComponent from './FooterComponent'
+import PrincipleComponent from './PrincipleComponent'
 
 export default {
   name: 'HomeComponent',
@@ -162,7 +216,8 @@ export default {
       TitleComponent,
       PositionComponent,
       SmallBlockComponent,
-      FooterComponent
+      FooterComponent,
+      PrincipleComponent
   }
 }
 </script>
@@ -259,6 +314,10 @@ export default {
        background-repeat: no-repeat;
        background-size: cover;
        padding: 4% 0px;
+   }
+   .principles-box
+   {
+       padding:5% 0px;
    }
 
    /**   MOBILE VIEW */
