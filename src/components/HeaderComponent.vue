@@ -3,7 +3,7 @@
     <a href="#Home"><img class="logo" width="55px" height="55px" src="../assets/logo.png"></a>
     <ul>
     <li><a target="_blankS" href="https://github.com/jdhasko?tab=repositories">&lt;my_Projects/&gt;</a></li>
-    <li><a target="_blankS" href="https://github.com/jdhasko?tab=repositories">&lt;UI_designs/&gt;</a></li>
+    <li><a target="_blankS" href="https://jdhasko.github.io/portfolio/">&lt;UI_designs/&gt;</a></li>
   </ul>
   </header>
 </template>

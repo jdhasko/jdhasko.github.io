@@ -35,7 +35,7 @@
                         {topic: 'PROGRAMMING LANGUAGES', data:['Javascript, Typescript','HTML, CSS','C#','SQL', 'React', 'Vue'], oneline:0},
                         {topic: 'METHODOLOGIES', data:['Agile Developent', 'XP and SCRUM'], oneline:0},
                         {topic: 'OTHER', data:['UI Design - Prototyping','Adobe Ps, Pr, Xd etc.', 'Computer Networks'], oneline:0}]"
-                        :buttonData="{icon: 'far fa-eye fa-lg', text: 'view grades ', link: 'https://github.com/jdhasko/jdhasko.github.io/tree/master/documents/grades.pdf', hasButton:true}" />
+                        :buttonData="{icon: 'far fa-eye fa-lg', text: 'view portfolio ', link: 'https://jdhasko.github.io/portfolio/', hasButton:true}" />
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@ During my work in Netto as a Sales Assistant I gained really important practical
                 title="Zealand Academy - Computer Sciecne"
                 subTitle="2019 - Present"
                 description = "I am taking my current education in Denmark at Zealand Academy. I got hands-on experience in programming and learned how project work really is. We have been tasked to deliver solutions for real problems of real companies. I specialised in IT-Security, Mobile App Development (Android studio/Java/Kotling/Xamarin) and Unity Game Development. I got a great understanding on working with APIs and creating them. We also learnt about git and verion control."
-                :buttonData="{icon: 'far fa-eye fa-lg', text: 'See grades', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/grades.pdf', hasButton:false}"
+                :buttonData="{icon: 'far fa-eye fa-lg', text: 'see grades', link: 'https://github.com/jdhasko/jdhasko.github.io/blob/master/src/documents/grades.pdf', hasButton:true}"
                 />
 
                 <PositionComponent
